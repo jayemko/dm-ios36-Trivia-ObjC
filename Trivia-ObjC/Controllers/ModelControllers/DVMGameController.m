@@ -131,3 +131,25 @@ static NSString * const kEncodeType3986 = @"url3986";
 }
 
 @end
+
+@implementation DVMGameController (ResponseCode)
+
++ (NSString *)codeDescription:(ResponseCode)code
+{
+    switch (code) {
+        case ResponseCodeSuccess:
+            return @"Code 0: Success Returned results successfully.";
+        case ResponseCodeNoResults:
+            return @"Code 1: No Results Could not return results. The API doesn't have enough questions for your query. (Ex. Asking for 50 Questions in a Category that only has 20.)";
+        case ResponseCodeInvalidParameter:
+            return @"Code 2: Invalid Parameter Contains an invalid parameter. Arguements passed in aren't valid. (Ex. Amount = Five)";
+        case ResponseCodeTokenNotFound:
+            return @"Code 3: Token Not Found Session Token does not exist.";
+        case ResponseCodeTokenEmpty:
+            return @"Code 4: Token Empty Session Token has returned all possible questions for the specified query. Resetting the Token is necessary.";
+        case ResponseCodeFetchError:
+            return @"Code N: There was an error fetching data from the API";
+    }
+}
+
+@end

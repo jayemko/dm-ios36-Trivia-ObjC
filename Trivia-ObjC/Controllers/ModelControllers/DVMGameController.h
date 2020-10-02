@@ -32,4 +32,10 @@ typedef NS_ENUM(NSInteger, ResponseCode) {
 
 @end
 
+@interface DVMGameController (ResponseCode)
+
++ (NSString *)codeDescription:(ResponseCode)code;
+
+@end
+
 NS_ASSUME_NONNULL_END
