@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3gR-PF-nEl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3gR-PF-nEl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5s7-RJ-teY">
-                                <rect key="frame" x="8" y="44" width="398" height="14.5"/>
+                                <rect key="frame" x="16" y="68" width="390" height="14.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAp-sb-zcT">
-                                        <rect key="frame" x="0.0" y="0.0" width="338.5" height="14.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="330.5" height="14.5"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Difficulty" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TH3-uY-ttX">
-                                        <rect key="frame" x="346.5" y="0.0" width="51.5" height="14.5"/>
+                                        <rect key="frame" x="338.5" y="0.0" width="51.5" height="14.5"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -34,21 +34,22 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ff-vX-hkq">
-                                <rect key="frame" x="41.5" y="184" width="331" height="33.5"/>
+                                <rect key="frame" x="41.5" y="432" width="331" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TQs-Ps-jPC">
-                                <rect key="frame" x="41.5" y="494" width="331" height="288"/>
+                                <rect key="frame" x="41.5" y="508" width="331" height="288"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdc-jY-wbK">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jdc-jY-wbK">
                                         <rect key="frame" x="0.0" y="0.0" width="331" height="66"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration" identifier="answerButton1"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="66" id="ikz-PC-LUa"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Answer1"/>
                                         <connections>
@@ -56,13 +57,14 @@
                                             <action selector="answerButtonTouchDown:" destination="3gR-PF-nEl" eventType="touchDown" id="iy0-am-pKe"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Buc-sm-NlY">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Buc-sm-NlY">
                                         <rect key="frame" x="0.0" y="74" width="331" height="66"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration" identifier="answerButton2"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="66" id="OaF-vY-LJL"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Answer2"/>
                                         <connections>
@@ -70,13 +72,14 @@
                                             <action selector="answerButtonTouchDown:" destination="3gR-PF-nEl" eventType="touchDown" id="V43-9v-cX8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duq-8N-uPg">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="duq-8N-uPg">
                                         <rect key="frame" x="0.0" y="148" width="331" height="66"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration" identifier="answerButton3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="66" id="Bwa-W7-XaL"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Answer3"/>
                                         <connections>
@@ -84,13 +87,14 @@
                                             <action selector="answerButtonTouchDown:" destination="3gR-PF-nEl" eventType="touchDown" id="D3P-VN-6R5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he0-eA-9Il">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="he0-eA-9Il">
                                         <rect key="frame" x="0.0" y="222" width="331" height="66"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration" identifier="answerButton4"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="66" id="1if-0m-DAV"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Answer4"/>
                                         <connections>
@@ -101,7 +105,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 0/0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMS-bv-iSX">
-                                <rect key="frame" x="62" y="849.5" width="290" height="20.5"/>
+                                <rect key="frame" x="62" y="820" width="290" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -111,16 +115,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="TQs-Ps-jPC" firstAttribute="centerX" secondItem="ghf-nq-Q10" secondAttribute="centerX" id="5gB-9J-8Gl"/>
-                            <constraint firstItem="QMS-bv-iSX" firstAttribute="bottom" secondItem="ghf-nq-Q10" secondAttribute="bottom" constant="8" id="7Ms-C9-b5g"/>
                             <constraint firstItem="QMS-bv-iSX" firstAttribute="centerX" secondItem="ghf-nq-Q10" secondAttribute="centerX" id="IfI-hs-OQ5"/>
-                            <constraint firstItem="4Ff-vX-hkq" firstAttribute="top" secondItem="ghf-nq-Q10" secondAttribute="top" constant="140" id="QUv-vv-Atr"/>
-                            <constraint firstItem="5s7-RJ-teY" firstAttribute="leading" secondItem="ghf-nq-Q10" secondAttribute="leading" constant="8" id="Qgg-uB-rkp"/>
+                            <constraint firstItem="TQs-Ps-jPC" firstAttribute="firstBaseline" secondItem="4Ff-vX-hkq" secondAttribute="baseline" constant="88" id="Iga-SY-7pC"/>
+                            <constraint firstItem="QMS-bv-iSX" firstAttribute="top" secondItem="TQs-Ps-jPC" secondAttribute="bottom" constant="24" id="MdZ-iU-T6e"/>
+                            <constraint firstItem="5s7-RJ-teY" firstAttribute="leading" secondItem="ghf-nq-Q10" secondAttribute="leading" constant="16" id="Qgg-uB-rkp"/>
                             <constraint firstItem="QMS-bv-iSX" firstAttribute="width" secondItem="dik-Jl-XYV" secondAttribute="width" multiplier="0.7" id="SWY-X6-5Iz"/>
                             <constraint firstItem="4Ff-vX-hkq" firstAttribute="centerX" secondItem="ghf-nq-Q10" secondAttribute="centerX" id="UnQ-ky-BxV"/>
-                            <constraint firstItem="5s7-RJ-teY" firstAttribute="top" secondItem="ghf-nq-Q10" secondAttribute="top" id="Yi4-yD-itM"/>
+                            <constraint firstItem="5s7-RJ-teY" firstAttribute="top" secondItem="ghf-nq-Q10" secondAttribute="top" constant="24" id="Yi4-yD-itM"/>
                             <constraint firstItem="ghf-nq-Q10" firstAttribute="trailing" secondItem="5s7-RJ-teY" secondAttribute="trailing" constant="8" id="ayL-EY-LLG"/>
                             <constraint firstItem="4Ff-vX-hkq" firstAttribute="width" secondItem="dik-Jl-XYV" secondAttribute="width" multiplier="0.8" id="gQF-u5-V7c"/>
-                            <constraint firstItem="ghf-nq-Q10" firstAttribute="bottom" secondItem="TQs-Ps-jPC" secondAttribute="bottom" constant="80" id="lev-n7-1pO"/>
+                            <constraint firstItem="ghf-nq-Q10" firstAttribute="bottom" secondItem="TQs-Ps-jPC" secondAttribute="bottom" constant="66" id="lev-n7-1pO"/>
                             <constraint firstItem="TQs-Ps-jPC" firstAttribute="width" secondItem="dik-Jl-XYV" secondAttribute="width" multiplier="0.8" id="pVm-Fl-hY4"/>
                         </constraints>
                     </view>
