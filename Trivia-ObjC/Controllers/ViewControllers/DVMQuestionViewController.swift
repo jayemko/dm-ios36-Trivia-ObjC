@@ -150,6 +150,8 @@ class DVMQuestionViewController: UIViewController {
                 if responseCode == ResponseCode.success {
                     self.sessionToken = token
                     self.newGame()
+                } else {
+                    print("[\(#function):\(#line)] -- \(DVMGameController.codeDescription(responseCode))")
                 }
             }
         } else {
@@ -162,7 +164,7 @@ class DVMQuestionViewController: UIViewController {
                         self.updateViews()
                     }
                 } else {
-                    print("Error [\(#function):\(#line)] -- Response Code:\(responseCode)")
+                    print("Error [\(#function):\(#line)] -- Response Code:\(DVMGameController.codeDescription(responseCode))")
                 }
             }
         }
