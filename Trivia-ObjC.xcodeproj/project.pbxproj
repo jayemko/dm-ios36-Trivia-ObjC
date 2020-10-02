@@ -13,6 +13,12 @@
 		3C66F65725266A1F0022437F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C66F65625266A1F0022437F /* Assets.xcassets */; };
 		3C66F65A25266A1F0022437F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C66F65825266A1F0022437F /* LaunchScreen.storyboard */; };
 		3C66F65D25266A1F0022437F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C66F65C25266A1F0022437F /* main.m */; };
+		3C66F67025266DF90022437F /* DVMQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C66F66F25266DF90022437F /* DVMQuestion.m */; };
+		3C66F67525266E110022437F /* DVMGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C66F67425266E110022437F /* DVMGame.m */; };
+		3C66F67925266E480022437F /* DVMGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C66F67825266E480022437F /* DVMGameController.m */; };
+		3C66F67E252684F40022437F /* DVMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C66F67D252684F40022437F /* DVMCategory.m */; };
+		3C66F6822526895F0022437F /* DVMCategoriesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66F6812526895F0022437F /* DVMCategoriesListTableViewController.swift */; };
+		3C66F685252689900022437F /* DVMQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66F684252689900022437F /* DVMQuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,17 @@
 		3C66F65925266A1F0022437F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C66F65B25266A1F0022437F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C66F65C25266A1F0022437F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C66F66E25266DF90022437F /* DVMQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMQuestion.h; sourceTree = "<group>"; };
+		3C66F66F25266DF90022437F /* DVMQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMQuestion.m; sourceTree = "<group>"; };
+		3C66F67325266E110022437F /* DVMGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMGame.h; sourceTree = "<group>"; };
+		3C66F67425266E110022437F /* DVMGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMGame.m; sourceTree = "<group>"; };
+		3C66F67725266E480022437F /* DVMGameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMGameController.h; sourceTree = "<group>"; };
+		3C66F67825266E480022437F /* DVMGameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMGameController.m; sourceTree = "<group>"; };
+		3C66F67C252684F40022437F /* DVMCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCategory.h; sourceTree = "<group>"; };
+		3C66F67D252684F40022437F /* DVMCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCategory.m; sourceTree = "<group>"; };
+		3C66F6802526895F0022437F /* Trivia-ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Trivia-ObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		3C66F6812526895F0022437F /* DVMCategoriesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVMCategoriesListTableViewController.swift; sourceTree = "<group>"; };
+		3C66F684252689900022437F /* DVMQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVMQuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,10 @@
 		3C66F64925266A1E0022437F /* Trivia-ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				3C66F66C25266DBA0022437F /* Models */,
+				3C66F66B25266DB50022437F /* Views */,
+				3C66F66825266DA60022437F /* Controllers */,
+				3C66F66D25266DBF0022437F /* Helpers */,
 				3C66F66425266A340022437F /* Resources */,
 				3C66F65325266A1E0022437F /* Main.storyboard */,
 			);
@@ -77,6 +98,61 @@
 				3C66F65C25266A1F0022437F /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		3C66F66825266DA60022437F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C66F66A25266DAF0022437F /* ModelControllers */,
+				3C66F66925266DAB0022437F /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3C66F66925266DAB0022437F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C66F6812526895F0022437F /* DVMCategoriesListTableViewController.swift */,
+				3C66F684252689900022437F /* DVMQuestionViewController.swift */,
+				3C66F6802526895F0022437F /* Trivia-ObjC-Bridging-Header.h */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3C66F66A25266DAF0022437F /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C66F67725266E480022437F /* DVMGameController.h */,
+				3C66F67825266E480022437F /* DVMGameController.m */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		3C66F66B25266DB50022437F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C66F66C25266DBA0022437F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C66F66E25266DF90022437F /* DVMQuestion.h */,
+				3C66F66F25266DF90022437F /* DVMQuestion.m */,
+				3C66F67325266E110022437F /* DVMGame.h */,
+				3C66F67425266E110022437F /* DVMGame.m */,
+				3C66F67C252684F40022437F /* DVMCategory.h */,
+				3C66F67D252684F40022437F /* DVMCategory.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C66F66D25266DBF0022437F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,10 +181,12 @@
 		3C66F63F25266A1E0022437F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DVM;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					3C66F64625266A1E0022437F = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -148,9 +226,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C66F67525266E110022437F /* DVMGame.m in Sources */,
 				3C66F64C25266A1E0022437F /* AppDelegate.m in Sources */,
+				3C66F67E252684F40022437F /* DVMCategory.m in Sources */,
 				3C66F65D25266A1F0022437F /* main.m in Sources */,
+				3C66F67925266E480022437F /* DVMGameController.m in Sources */,
+				3C66F6822526895F0022437F /* DVMCategoriesListTableViewController.swift in Sources */,
 				3C66F64F25266A1E0022437F /* SceneDelegate.m in Sources */,
+				3C66F685252689900022437F /* DVMQuestionViewController.swift in Sources */,
+				3C66F67025266DF90022437F /* DVMQuestion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 268JS24689;
 				INFOPLIST_FILE = "Trivia-ObjC/Resources/Info.plist";
@@ -302,6 +387,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.koceja.Trivia-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Trivia-ObjC/Controllers/ViewControllers/Trivia-ObjC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -311,6 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 268JS24689;
 				INFOPLIST_FILE = "Trivia-ObjC/Resources/Info.plist";
@@ -320,6 +409,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.koceja.Trivia-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Trivia-ObjC/Controllers/ViewControllers/Trivia-ObjC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
