@@ -16,8 +16,6 @@
 		3C66F67025266DF90022437F /* DVMQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C66F66F25266DF90022437F /* DVMQuestion.m */; };
 		3C66F67525266E110022437F /* DVMGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C66F67425266E110022437F /* DVMGame.m */; };
 		3C66F67925266E480022437F /* DVMGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C66F67825266E480022437F /* DVMGameController.m */; };
-		3C66F67E252684F40022437F /* DVMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C66F67D252684F40022437F /* DVMCategory.m */; };
-		3C66F6822526895F0022437F /* DVMCategoriesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66F6812526895F0022437F /* DVMCategoriesListTableViewController.swift */; };
 		3C66F685252689900022437F /* DVMQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66F684252689900022437F /* DVMQuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,10 +36,7 @@
 		3C66F67425266E110022437F /* DVMGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMGame.m; sourceTree = "<group>"; };
 		3C66F67725266E480022437F /* DVMGameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMGameController.h; sourceTree = "<group>"; };
 		3C66F67825266E480022437F /* DVMGameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMGameController.m; sourceTree = "<group>"; };
-		3C66F67C252684F40022437F /* DVMCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCategory.h; sourceTree = "<group>"; };
-		3C66F67D252684F40022437F /* DVMCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCategory.m; sourceTree = "<group>"; };
 		3C66F6802526895F0022437F /* Trivia-ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Trivia-ObjC-Bridging-Header.h"; sourceTree = "<group>"; };
-		3C66F6812526895F0022437F /* DVMCategoriesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVMCategoriesListTableViewController.swift; sourceTree = "<group>"; };
 		3C66F684252689900022437F /* DVMQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVMQuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,9 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				3C66F66C25266DBA0022437F /* Models */,
-				3C66F66B25266DB50022437F /* Views */,
 				3C66F66825266DA60022437F /* Controllers */,
-				3C66F66D25266DBF0022437F /* Helpers */,
 				3C66F66425266A340022437F /* Resources */,
 				3C66F65325266A1E0022437F /* Main.storyboard */,
 			);
@@ -112,7 +105,6 @@
 		3C66F66925266DAB0022437F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3C66F6812526895F0022437F /* DVMCategoriesListTableViewController.swift */,
 				3C66F684252689900022437F /* DVMQuestionViewController.swift */,
 				3C66F6802526895F0022437F /* Trivia-ObjC-Bridging-Header.h */,
 			);
@@ -128,13 +120,6 @@
 			path = ModelControllers;
 			sourceTree = "<group>";
 		};
-		3C66F66B25266DB50022437F /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		3C66F66C25266DBA0022437F /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,17 +127,8 @@
 				3C66F66F25266DF90022437F /* DVMQuestion.m */,
 				3C66F67325266E110022437F /* DVMGame.h */,
 				3C66F67425266E110022437F /* DVMGame.m */,
-				3C66F67C252684F40022437F /* DVMCategory.h */,
-				3C66F67D252684F40022437F /* DVMCategory.m */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		3C66F66D25266DBF0022437F /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,10 +204,8 @@
 			files = (
 				3C66F67525266E110022437F /* DVMGame.m in Sources */,
 				3C66F64C25266A1E0022437F /* AppDelegate.m in Sources */,
-				3C66F67E252684F40022437F /* DVMCategory.m in Sources */,
 				3C66F65D25266A1F0022437F /* main.m in Sources */,
 				3C66F67925266E480022437F /* DVMGameController.m in Sources */,
-				3C66F6822526895F0022437F /* DVMCategoriesListTableViewController.swift in Sources */,
 				3C66F64F25266A1E0022437F /* SceneDelegate.m in Sources */,
 				3C66F685252689900022437F /* DVMQuestionViewController.swift in Sources */,
 				3C66F67025266DF90022437F /* DVMQuestion.m in Sources */,

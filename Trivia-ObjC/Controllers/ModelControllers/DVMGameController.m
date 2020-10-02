@@ -8,7 +8,6 @@
 #import "DVMGameController.h"
 
 static NSString * const kQueryURLString = @"https://opentdb.com/api.php";
-static NSString * const kCategoriesURLString = @"https://opentdb.com/api_category.php";
 static NSString * const kSessionTokenURLString = @"https://opentdb.com/api_token.php";
 
 static NSString * const kQueryItemAmount = @"amount";
@@ -21,9 +20,6 @@ static NSString * const kQueryItemToken = @"token";
 
 static NSString * const kKeyResponseCode = @"response_code";
 static NSString * const kKeyResults = @"results";
-static NSString * const kKeyTriviaCategories = @"trivia_categories";
-static NSString * const kKeyCategoryId = @"id";
-static NSString * const kKeyCategoryName = @"name";
 
 static NSString * const kEncodeType3986 = @"url3986";
 
@@ -95,43 +91,6 @@ static NSString * const kEncodeType3986 = @"url3986";
         DVMGame *newGame = [[DVMGame alloc] initWithResults:results];
         return completion(newGame, ResponseCodeSuccess);
         
-        
-    }] resume];
-}
-
-+ (void)fetchCategoriesList:(void (^) (NSArray *))completion
-{
-    
-    NSURL *categoriesURL = [NSURL URLWithString:kCategoriesURLString];
-    
-    [[NSURLSession.sharedSession dataTaskWithURL:categoriesURL
-                               completionHandler:^(NSData * _Nullable data,
-                                                   NSURLResponse * _Nullable response,
-                                                   NSError * _Nullable error) {
-        if (error) {
-            NSLog(@"%s[%d]: %@\n---\n%@",__FUNCTION__,__LINE__, error, error.localizedDescription);
-            return completion(nil);
-        }
-        if (!data) {
-            NSLog(@"%s[%d]: There appears to be no \"data\"",__FUNCTION__,__LINE__);
-            return completion(nil);
-        }
-        
-        NSDictionary *topLevelDictionary =
-        [NSJSONSerialization JSONObjectWithData:data
-                                        options:NSJSONReadingAllowFragments
-                                          error:&error];
-        NSArray *results = [topLevelDictionary objectForKey:kKeyTriviaCategories];
-        NSMutableArray *categories = [NSMutableArray new];
-        for (NSDictionary *result in results) {
-            NSInteger identifier = [[result objectForKey:kKeyCategoryId] integerValue];
-            NSString *name = [result objectForKey:kKeyCategoryName];
-            DVMCategory *category =
-            [[DVMCategory alloc] initWithCategoryName:name
-                                           categoryId:identifier];
-            [categories addObject:category];
-        }
-        return completion(categories);
         
     }] resume];
 }

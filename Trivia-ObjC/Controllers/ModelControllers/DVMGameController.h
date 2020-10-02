@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 #import "DVMGame.h"
-#import "DVMCategory.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -29,7 +28,6 @@ typedef NS_ENUM(NSInteger, ResponseCode) {
               sessionToken:(NSString *)sessionToken
                 completion:(void (^) (DVMGame *, ResponseCode))completion;
 
-+ (void)fetchCategoriesList:(void (^) (NSArray *))completion;
 + (void)requestSessionToken:(void (^) (NSString *, ResponseCode))completion;
 
 @end
